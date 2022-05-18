@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<title>O Enigma do Emagrecimento</title>
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="favicon.jpg">
+  <link rel="stylesheet" href="style.css">
+  <link rel="Shortcut Icon" href="img11.png" type="image/x-icon" />
+  
+<!-- Meta Pixel Code -->
+
+<!-- End Meta Pixel Code -->
+  
+</head>
+<body>
+    <div class="container">
+        <div class="black">
+            <div id="primeira">
+                <div class="question">
+                    <h1>Pergunta 1</h1>
+                    <p>Você está pronta para descobrir esse segredo?</p>
+                </div>
+                    <div class="answer">
+                    <button class="btn" onclick="segunda()">SIM</button>
+                    <button class="btn" onclick="segunda()">NÃO</button>
+                    </div>
+            </div>
+         <div id="segunda" class="hide">
+    <div class="question">
+        <h1>Pergunta 2</h1>
+        <p>Por ser um conteúdo exclusivo, você promete manter em sigilo?</p>
+    </div>
+         <div class="answer">
+<button class="btn" onclick="terceira()">SIM</button>
+<button class="btn" onclick="terceira()">NÃO</button>
+         </div>
+    </div>
+    <div id="terceira" class="hide">
+        <div class="question">
+            <h1>Pergunta 3</h1>
+            <p>Você tem noção que fará parte do 1% das mulheres que têm esse conhecimento?</p>
+        </div>
+<div class="answer">
+<button class="btn" onclick="quarta()">SIM</button>
+<button class="btn" onclick="quarta()">NÃO</button>
+    </div>
+    </div>
+    <div id="quarta" class="hide">
+    <div class="question">
+    <h1>Tudo Pronto!</h1>
+    <p>Você é a pessoa ideal para aprender esse segredo!<br/>Clique no botão abaixo para continuar</p>
+    </div>
+<button class="btn1" onclick="redirect()">CONTINUAR</button>
+    </div>
+    </div>
+<p style="text-align: center; font-weight: bold;">© 2022 – Todos os direitos reservados. Este site não faz parte nem é endossado pelo Facebook. Facebook é uma marca comercial da Facebook, Inc.</p>
+    </div>
+    <script>
+    function segunda() {
+      document.getElementById("primeira").classList.add("hide")
+      document.getElementById("segunda").classList.remove("hide")
+    }
+    function terceira() {
+      document.getElementById("segunda").classList.add("hide")
+      document.getElementById("terceira").classList.remove("hide")
+    }
+     function quarta() {
+      document.getElementById("terceira").classList.add("hide")
+      document.getElementById("quarta").classList.remove("hide")
+    }
+    function redirect() {
+      location.href = "https://codigozerobarriga.store/"
+    }
+    </script>
+</body>
+</html>
